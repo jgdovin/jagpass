@@ -78,6 +78,6 @@ Template.addPassword.events({
         $.bootstrapGrowl("Password " + form.name + " successfully created", {
             type: 'success'
         });
-        $(event.target).trigger('reset');
+        //$(event.target).trigger('reset');
     }
 });

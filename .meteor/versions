@@ -10,7 +10,7 @@ blaze-tools@1.0.3
 boilerplate-generator@1.0.3
 callback-hook@1.0.3
 check@1.0.5
-dburles:mongo-collection-instances@0.2.6
+dburles:collection-helpers@1.0.3
 ddp@1.1.0
 deps@1.0.7
 duongthienduc:meteor-bootstrap-growl@1.0.2
@@ -31,6 +31,14 @@ iron:location@1.0.7
 iron:middleware-stack@1.0.7
 iron:router@1.0.7
 iron:url@1.0.7
+jparker:crypto-aes@0.1.0
+jparker:crypto-base64@0.1.0
+jparker:crypto-cipher-core@0.1.1
+jparker:crypto-core@0.1.0
+jparker:crypto-evpkdf@0.1.1
+jparker:crypto-md5@0.1.1
+jparker:crypto-mode@0.1.1
+jparker:crypto-padding@0.1.0
 jquery@1.11.3_2
 json@1.0.3
 launch-screen@1.0.2
@@ -45,13 +53,6 @@ minimongo@1.0.8
 mobile-status-bar@1.0.3
 mongo@1.1.0
 msavin:mongol@0.3.5
-mylar:accounts-idp@0.2.0
-mylar:async@0.1.0
-mylar:basic-crypto@0.1.1
-mylar:meteor-changes@0.3.1
-mylar:platform@0.3.1
-mylar:principal@0.2.0
-mylar:timing@0.1.0
 npm-bcrypt@0.7.8_2
 observe-sequence@1.0.6
 ordered-dict@1.0.3
