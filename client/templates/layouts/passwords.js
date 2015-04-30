@@ -19,19 +19,19 @@ Template.allPasswords.created = function() {
     this.currentGroup = new ReactiveVar;
     this.currentPassword = new ReactiveVar;
 }
-
+var timing = {duration: 500, queue: false};
 Template.allPasswords.events({
     "click [data-action=getGroup]" : function(e, t) {
         e.preventDefault();
         t.$('[data-target=allGroups]').animate({
             opacity: 0.25,
             left: "-350px",
-        }, {duration: 1000, queue: false});
+        }, timing);
 
         t.$('[data-target=groupPasswords]').animate({
             opacity: 1,
             left: "-350px",
-        }, {duration: 1000, queue: false});
+        }, timing);
         t.currentGroup.set($(e.target).data('id'));
     },
     "click [data-action=backToMain]" : function(e, t) {
@@ -39,24 +39,24 @@ Template.allPasswords.events({
         t.$('[data-target=allGroups]').animate({
             opacity: 1,
             left: "0px",
-        }, {duration: 1000, queue: false});
+        }, timing);
 
         t.$('[data-target=groupPasswords]').animate({
             opacity: 0,
             left: "0",
-        }, {duration: 1000, queue: false});
+        }, timing);
         t.currentGroup.set('');
     },
     "click [data-action=getPassword]" : function(e, t) {
         e.preventDefault();
         t.$('[data-target=groupPasswords]').animate({
             opacity: 0.25,
-        }, {duration: 1000, queue: false});
+        }, timing);
 
         t.$('[data-target=passwordDetails]').animate({
             opacity: 1,
             left: "-350px",
-        }, {duration: 1000, queue: false});
+        }, timing);
         t.currentPassword.set($(e.target).data('id'));
     },
     "click [data-action=backToGroup]" : function(e, t) {
@@ -64,10 +64,10 @@ Template.allPasswords.events({
         t.$('[data-target=passwordDetails]').animate({
             opacity: 0,
             left: 0
-        }, {duration: 1000, queue: false});
+        }, timing);
         t.$('[data-target=groupPasswords]').animate({
             opacity: 1
-        }, {duration: 1000, queue: false});
+        }, timing);
         t.currentPassword.set('');
 
     }
