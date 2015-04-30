@@ -18,7 +18,7 @@ Template.allPasswords.helpers({
 Template.allPasswords.onCreated(function() {
     this.currentGroup = new ReactiveVar;
     this.currentPassword = new ReactiveVar;
-})
+});
 var timing = {duration: 500, queue: false};
 Template.allPasswords.events({
     "click [data-action=getGroup]" : function(e, t) {

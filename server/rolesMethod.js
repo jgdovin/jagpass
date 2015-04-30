@@ -1,6 +1,6 @@
 Meteor.methods({
     createRole: function (name) {
-        var loggedInUser = Meteor.user()
+        var loggedInUser = Meteor.user();
 
         if (!loggedInUser ||
             !Roles.userIsInRole(loggedInUser,
@@ -11,4 +11,4 @@ Meteor.methods({
         Roles.createRole(name);
         console.log('created roll ' + name);
     }
-})
+});
